@@ -238,6 +238,18 @@
   @media (min-width: 721px) { .toast { bottom: 24px; } }
   @media (prefers-reduced-motion: no-preference) { .toast { animation: rise .25s ease-out; } @keyframes rise { from { opacity: 0; transform: translate(-50%, 8px); } } }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Class schedule */
+  .schedule-wrap { overflow-x: auto; margin-top: 30px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+  .schedule-table { width: 100%; border-collapse: collapse; min-width: 640px; text-align: left; }
+  .schedule-table th { background: var(--green-deep); color: white; font: 700 16px var(--display); text-transform: uppercase; letter-spacing: .06em; }
+  .schedule-table th, .schedule-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .schedule-table tbody tr:last-child td { border-bottom: 0; }
+  .schedule-table tbody tr:nth-child(even) { background: rgba(63,112,37,.055); }
+  .schedule-table td:first-child { font-weight: 700; white-space: nowrap; }
+  .schedule-table .time { font-weight: 700; color: var(--green); white-space: nowrap; }
+  .schedule-note { margin-top: 16px; color: var(--muted); font-size: 15px; }
+
 </style>
 </head>
 <body>
@@ -250,6 +262,7 @@
     </button>
     <nav id="site-nav" aria-label="Main">
       <a href="#programs">Programs</a>
+      <a href="#schedule">Schedule</a>
       <a href="#about">Jiu-Jitsu</a>
       <a href="#professor">Professor</a>
       <a href="#contact">Contact</a>
@@ -281,9 +294,9 @@
   <div class="wrap">
     <p class="eyebrow">Programs</p>
     <h2>Classes for every age</h2>
-    <p class="lede">Beginner-friendly instruction in a structured, supervised setting. Whether you're 5 or 55, there's a class built for you.</p>
+    <p class="lede">Beginner-friendly instruction in a structured, supervised setting. Whether you're 4 or 55, there's a class built for you.</p>
     <div class="grid four">
-      <div class="program item"><span class="age">Ages 5–12</span><h3>Kids</h3><p class="who">Focus, discipline, and confidence through play and structured technique.</p></div>
+      <div class="program item"><span class="age">Ages 4–12</span><h3>Kids</h3><p class="who">Focus, discipline, and confidence through play and structured technique.</p></div>
       <div class="program item"><span class="age">Ages 13–17</span><h3>Teens</h3><p class="who">Self-defense, fitness, and a positive team to grow with.</p></div>
       <div class="program item"><span class="age">All levels</span><h3>Women's</h3><p class="who">Practical self-defense and technique in a respectful, supportive setting.</p></div>
       <div class="program item"><span class="age">Gi &amp; No-Gi</span><h3>Adults</h3><p class="who">Train for lifestyle, fitness, or competition — from first day to black belt.</p></div>
@@ -324,6 +337,34 @@
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section class="band" id="schedule">
+  <div class="wrap">
+    <p class="eyebrow">Weekly training</p>
+    <h2>Class Schedule</h2>
+    <p class="lede">Find your place on the mats. All levels are welcome, and your first class is free.</p>
+    <div class="schedule-wrap">
+      <table class="schedule-table">
+        <thead><tr><th>Day</th><th>Time</th><th>Class</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="4">Monday</td><td class="time">11:35 AM – 12:45 PM</td><td>All Levels</td></tr>
+          <tr><td class="time">5–6 PM</td><td>Kids</td></tr><tr><td class="time">6–7 PM</td><td>Adults All Levels</td></tr><tr><td class="time">7–8 PM</td><td>Fundamentals (Teens &amp; Adults)</td></tr>
+          <tr><td rowspan="4">Tuesday</td><td class="time">6–7 AM</td><td>All Levels</td></tr>
+          <tr><td class="time">5–6 PM</td><td>Kids</td></tr><tr><td class="time">6–7 PM</td><td>Adults All Levels</td></tr><tr><td class="time">7–8 PM</td><td>Adults No-Gi</td></tr>
+          <tr><td rowspan="4">Wednesday</td><td class="time">11:35 AM – 12:45 PM</td><td>All Levels</td></tr>
+          <tr><td class="time">5–6 PM</td><td>Kids</td></tr><tr><td class="time">6–7 PM</td><td>Adults All Levels</td></tr><tr><td class="time">7–8 PM</td><td>Fundamentals (Teens &amp; Adults)</td></tr>
+          <tr><td rowspan="4">Thursday</td><td class="time">6–7 AM</td><td>All Levels</td></tr>
+          <tr><td class="time">5–6 PM</td><td>Kids</td></tr><tr><td class="time">6–7 PM</td><td>Adults All Levels</td></tr><tr><td class="time">7–8 PM</td><td>Adults No-Gi</td></tr>
+          <tr><td rowspan="3">Friday</td><td class="time">11:35 AM – 12:45 PM</td><td>All Levels</td></tr>
+          <tr><td class="time">5–6 PM</td><td>Kids</td></tr><tr><td class="time">6–8 PM</td><td>Open Mat (All Ages)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="schedule-note">Schedule may change for holidays and special events. Contact us to confirm your trial class.</p>
+    <div class="cta-row"><a class="btn" href="sms:+12103256817?body=Hi!%20I%27d%20like%20to%20schedule%20a%20free%20trial%20class.">Book a Free Trial</a></div>
   </div>
 </section>
 
@@ -394,7 +435,7 @@
         </div>
         <div class="hours">
           <h3>Class schedule</h3>
-          <p>Opening schedule is being finalized. Text us and we'll tell you which class fits you best.</p>
+          <p>Morning, lunchtime, kids, and evening classes Monday–Friday. <a href="#schedule">View the full weekly schedule</a>.</p>
         </div>
       </div>
       <div class="ctl">
