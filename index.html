@@ -250,6 +250,12 @@
   .schedule-table .time { font-weight: 700; color: var(--green); white-space: nowrap; }
   .schedule-note { margin-top: 16px; color: var(--muted); font-size: 15px; }
 
+  /* Pictures */
+  .picture-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 22px; margin-top: 30px; }
+  .picture-card { margin: 0; max-width: 640px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .picture-card a { display: block; }
+  .picture-card img { width: 100%; height: auto; }
+  .picture-card figcaption { padding: 16px 20px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -265,6 +271,7 @@
       <a href="#schedule">Schedule</a>
       <a href="#about">Jiu-Jitsu</a>
       <a href="#professor">Professor</a>
+      <a href="#pictures">Pictures</a>
       <a href="#contact">Contact</a>
       <a class="nav-cta" href="sms:+12103256817?body=Hi!%20I%27d%20like%20to%20book%20a%20free%20trial%20class.">Text Us</a>
     </nav>
@@ -400,6 +407,22 @@
       <div class="step"><h3>Text or call</h3><p>Message 210-325-6817 with your name and who's training. We'll match you to the right class.</p></div>
       <div class="step"><h3>Show up ready</h3><p>Wear comfortable athletic clothes and bring water. No gi or experience needed — we'll take care of the rest.</p></div>
       <div class="step"><h3>Roll with us</h3><p>Warm up, learn a technique, drill it with a partner. Then decide if Amazon Warriors is your new home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="pictures" aria-labelledby="pictures-title">
+  <div class="wrap">
+    <p class="eyebrow">Our community</p>
+    <h2 id="pictures-title">Pictures</h2>
+    <p class="lede">A look inside Amazon Warriors Brazilian Jiu-Jitsu. Select a picture to view it full size.</p>
+    <div class="picture-grid">
+      <figure class="picture-card">
+        <a href="/assets/hero.webp" target="_blank" rel="noopener" aria-label="View Amazon Warriors photo full size (opens in a new tab)">
+          <img src="/assets/hero.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Amazon Warriors Brazilian Jiu-Jitsu">
+        </a>
+        <figcaption>Amazon Warriors Brazilian Jiu-Jitsu · San Antonio, Texas</figcaption>
+      </figure>
     </div>
   </div>
 </section>
